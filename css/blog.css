@@ -1,0 +1,240 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  :root {
+    --primary-color: #4891ff;
+    --light-color: #f4f4f6;
+    --dark-color: #111;
+  }
+  
+  body {
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    background:white;
+    overflow-x: hidden;
+
+  }
+  
+  a {
+    text-decoration: none;
+    color: #333;
+  }
+  
+  ul {
+    list-style: none;
+  }
+  
+  img {
+    max-width: 100%;
+  }
+  
+  /* Navbar */
+  .navbar {
+    background: #fff;
+    padding: 20px;
+  }
+  
+  .navbar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .navbar .main-menu ul {
+    display: flex;
+  }
+  
+  .navbar ul li a {
+    padding: 10px 20px;
+    display: block;
+    font-weight: 600;
+    transition: 0.5s;
+  }
+  
+  .navbar ul li a:hover {
+    color: var(--primary-color);
+  }
+  
+  .navbar ul li a i {
+    margin-right: 10px;
+  }
+  
+  .navbar ul li:last-child a {
+    margin-left: 10px;
+  }
+  .aymen{
+    height: 490px;
+  }
+  
+  img{
+    width: 30%;
+    border-radius: 50px;
+  }
+  .aymen1 .aymen{
+    justify-content: None;
+    gap: none;
+    display: flex;
+    
+    
+
+  }
+  .dpart1{
+    display: flex;
+    justify-content: center;
+  align-items: center;
+  border-bottom: 5px;
+ 
+  }
+  .text{
+    margin-right:-200px ;
+    width: 300px;
+  }
+
+/* FAQ */
+.faq {
+    padding: 40px 0;
+  }
+  
+  .faq .faq-group {
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 20px;
+  }
+  
+  .faq .faq-group .faq-group-header {
+    padding: 20px 0;
+    margin-bottom: 15px;
+    position: relative;
+  }
+  
+  .faq .faq-group .faq-group-header h4 {
+    font-weight: 600;
+    width: 95%;
+  }
+  
+  .faq .faq-group .faq-group-header i {
+    position: absolute;
+    right: 0;
+    top: 35px;
+    font-size: 1.3rem;
+    cursor: pointer;
+  }
+  
+  .faq .faq-group .faq-group-body {
+    display: none;
+  }
+  
+  .faq .faq-group .faq-group-body.open {
+    display: block;
+  }
+  
+  .faq ul.faq-menu {
+    max-width: 400px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #ddd;
+    padding: 10px 20px;
+    border-radius: 10px;
+    font-weight: 600;
+    cursor: pointer;
+  }
+  
+  .faq ul.faq-menu li {
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-align: center;
+  }
+  
+  .faq ul.faq-menu li.active {
+    background: var(--primary-color);
+    color: #fff;
+  }
+.hh{
+    width: 50%;
+    margin: 0 auto;
+    border: solid gray;
+    margin: 0 auto;
+    background: rgba(255, 255, 255, 0.28);
+border-radius: 30px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(9.2px);
+-webkit-backdrop-filter: blur(9.2px);
+border: 1px solid rgba(255, 255, 255, 0.3);
+/* From https://css.glass */
+background: rgba(255, 255, 255, 0.28);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(9.2px);
+-webkit-backdrop-filter: blur(9.2px);
+border: 1px solid rgba(255, 255, 255, 0.3);
+text-align: center;
+   
+
+}
+
+span{
+    font-size: 20px;
+    font-style: italic;
+    
+}
+
+
+ /* Testimonials */
+ .testimonials {
+  padding: 40px 0;
+  border-radius: 50px;
+}
+
+.testimonials .testimonials-heading {
+  width: 700px;
+  margin-bottom: 40px;
+}
+
+.testimonials .testimonials-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+.testimonials .card img{
+  width: 100%;
+  height: 100%;
+  
+}
+
+.testimonials .card p:nth-child(2) {
+  margin-top: 30px;
+  font-weight: bold;
+}
+@import url("https://fonts.googleapis.com/css2?family=Ruda&display=swap");
+
+svg {
+	font-family: "Ruda", sans-serif;
+	width: 100%; height: 100%;
+}
+svg text {
+	animation: stroke 8s infinite alternate;
+	stroke-width: 2;
+	stroke: #0A111D;
+	font-size: 55px;
+}
+@keyframes stroke {
+	0%   {
+		fill: rgba(3,6,9,0); stroke: rgba(10,17,29,1);
+		stroke-dashoffset: 25%; stroke-dasharray: 0 50%; stroke-width: 2;
+	}
+	70%  {fill: rgba(3,6,9,0); stroke: rgba(10,17,29,1); }
+	80%  {fill: rgba(3,6,9,0); stroke: rgba(10,17,29,1); stroke-width: 3; }
+	100% {
+		fill: rgba(3,6,9,1); stroke: rgba(10,17,29,0);
+		stroke-dashoffset: -25%; stroke-dasharray: 50% 0; stroke-width: 0;
+	}
+}
+
+.wrapper {background-color: #FFFFFF};
+
+

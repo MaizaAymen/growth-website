@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Responsive Registration Form</title>
+    <meta name="viewport" content="width=device-width,
+      initial-scale=1.0"/>
+      <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link 
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="css/login.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
+    
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="samir">
+        <div class="logo">
+          <a href="index.html">
+            <img src="logo-white.png" alt="logo" />
+          </a>
+        </div>
+
+        <div class="main-menu">
+          <ul>
+            <li>
+              <a href="index.html">Home</a>
+            </li>
+            <li>
+              <a href="aboutus.html">About Us</a>
+            </li>
+            <li>
+              <a href="blog.html">Blog</a>
+            </li>
+            <li>
+              <a class="btn" href="login.html"> <i class="fas fa-user"></i> Log In </a>
+            </li>
+          </ul>
+        </div>
+      
+    </nav>
+    <div class="container">
+      <h1 class="form-title">Registration</h1>
+      <form action="#">
+        <div class="main-user-info">
+          <div class="user-input-box">
+            <label for="fullName">Full Name</label>
+            <input type="text"
+                    id="fullName"
+                    name="fullName"
+                    placeholder="Enter Full Name" pattern="\w{3,16}" required/>
+          </div>
+          <div class="user-input-box">
+            <label for="username">Username</label>
+            <input type="text"
+                    id="username"
+                    name="username"
+                    placeholder="Enter Username"pattern="\w{3,16}" required/>
+          </div>
+          <div class="user-input-box">
+            <label for="email">Email</label>
+            <input type="email"
+                    id="email"
+                    name="email"
+                    placeholder="Enter Email"/>
+          </div>
+          <div class="user-input-box">
+            <label for="phoneNumber">Phone Number</label>
+            <input type="text"
+                    id="phoneNumber"
+                    name="phoneNumber"
+                    placeholder="Enter Phone Number"/>
+          </div>
+          <div class="user-input-box">
+            <label for="password">Password</label>
+            <input type="password"
+                    id="password"
+                    name="password"
+                    placeholder="Enter Password" pattern="\w{3,16}" required/>
+          </div>
+          <div class="user-input-box">
+            <label for="confirmPassword">Confirm Password</label>
+            <input type="password" 
+                    id="confirmPassword"
+                    name="confirmPassword"
+                    placeholder="Confirm Password" />
+          </div>
+        </div>
+        <div class="gender-details-box">
+          <span class="gender-title">Gender</span>
+          <div class="gender-category">
+            <input type="radio" name="gender" id="male">
+            <label for="male">Male</label>
+            <input type="radio" name="gender" id="female">
+            <label for="female">Female</label>
+            <input type="radio" name="gender" id="other">
+            <label for="other">Other</label>
+          </div>
+        </div>
+        <div class="form-submit-btn">
+          <input type="submit" value="Register">
+        </div>
+      </form>
+    </div>
+     <!-- FAQ -->
+     <section class="faq bg-light">
+      <div class="container-sm">
+        <h3 class="text-xl text-center">Frequently Asked Questions</h3>
+        <ul class="faq-menu">
+          <li class="active">All</li>
+          <li>Getting Started</li>
+          <li>Pricing</li>
+        </ul>
+        <div class="faq-content">
+          <div class="faq-group">
+            <div class="faq-group-header">
+              <h4 class="text-md">
+                How does the contact management feature help me keep track of
+                clients and partners?
+              </h4>
+              <i class="fas fa-minus"></i>
+            </div>
+            <div class="faq-group-body open">
+              <p>
+                Keep track of your contacts, gain valuable insights, analyse
+                live data and performance metrics.
+              </p>
+            </div>
+          </div>
+
+          <div class="faq-group">
+            <div class="faq-group-header">
+              <h4 class="text-md">
+                Can I customize the dashboards and reporting feature to display
+                the metrics that are most important to my business?
+              </h4>
+              <i class="fas fa-plus"></i>
+            </div>
+            <div class="faq-group-body">
+              <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ad
+                culpa enim blanditiis rem ipsum aliquam, unde iste fugit
+                praesentium eos?
+              </p>
+            </div>
+          </div>
+
+          <div class="faq-group">
+            <div class="faq-group-header">
+              <h4 class="text-md">
+                How does the task management feature help me delegate tasks to
+                my team and track progress?
+              </h4>
+              <i class="fas fa-plus"></i>
+            </div>
+            <div class="faq-group-body">
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Incidunt, a! Quaerat, voluptatum. Animi molestias ex quasi
+                explicabo minima perferendis commodi.
+              </p>
+            </div>
+          </div>
+
+          <div class="faq-group">
+            <div class="faq-group-header">
+              <h4 class="text-md">
+                Can I collaborate with my team in real-time using all tools?
+              </h4>
+              <i class="fas fa-plus"></i>
+            </div>
+            <div class="faq-group-body">
+              <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                Obcaecati doloremque assumenda aut dolorem recusandae quibusdam
+                aliquid. Repellat animi quam vitae.
+              </p>
+            </div>
+          </div>
+
+          <div class="faq-group">
+            <div class="faq-group-header">
+              <h4 class="text-md">Is the app available on all devices?</h4>
+              <i class="fas fa-plus"></i>
+            </div>
+            <div class="faq-group-body">
+              <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                Obcaecati doloremque assumenda aut dolorem recusandae quibusdam
+                aliquid. Repellat animi quam vitae.
+              </p>
+            </div>
+          </div>
+
+          <div class="faq-group">
+            <div class="faq-group-header">
+              <h4 class="text-md">
+                How does the app help me stay compliant when working with
+                freelancers and contractors?
+              </h4>
+              <i class="fas fa-plus"></i>
+            </div>
+            <div class="faq-group-body">
+              <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                Obcaecati doloremque assumenda aut dolorem recusandae quibusdam
+                aliquid. Repellat animi quam vitae.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+   
+
+    <script src="js/main.js"></script>
+  </body>
+</html>
